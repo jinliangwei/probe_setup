@@ -49,8 +49,6 @@ if __name__ == "__main__":
                 master = False
 
     print "Create nodes file --- done"
-    ssh(master_ip, "%s/setup_cluster.sh" % project_dir)
-    print "Set up cluster nodes --- done"
     ssh(master_ip, "%s/setup_hdfs.sh" % project_dir)
     print "Set up HDFS --- done"
     ssh(master_ip, "%s/setup_spark.sh" % project_dir)
