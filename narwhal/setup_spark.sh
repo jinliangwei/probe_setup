@@ -1,7 +1,7 @@
 #!/bin/bash
 
 project_dir=$(dirname $(readlink -f $0))
-spark_home=/users/jinlianw/spark-2.1.0-bin-hadoop2.7/
+spark_home=/users/jinlianw/spark-2.2.0-bin-hadoop2.7/
 hadoop_home=/users/jinlianw//hadoop-2.7.4/
 
 cp $project_dir/slaves ${spark_home}/conf/slaves
